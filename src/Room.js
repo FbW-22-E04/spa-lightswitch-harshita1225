@@ -9,8 +9,8 @@ export default function Room() {
     //console.log("clicked");
   };
   return (
-    <div className={lightOn ? "lit" : "dark"}>
-      <button onClick={lightHandler}>LightSwitch</button>
+    <div className={lightOn ? "room lit" : "room dark"}>
+      <button onClick={lightHandler}>{lightOn ? "ON" : "OFF"}</button>
       {lightOn ? <p>The Room is Lit</p> : <p>The Room is Dark</p>}
     </div>
   );
